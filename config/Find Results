@@ -1,0 +1,296 @@
+Searching 177 files for "vijaybus"
+
+~/Desktop/vijaybus-A-bus-Booking-App/README.md:
+    1  
+    2: ## VijayBus
+    3: VijayBus is a web-based bus booking application built using Ruby on Rails framework. This application allows users to search for buses and book tickets for various routes. It also provides an admin dashboard to manage buses, routes, and ticket bookings.
+    4  
+    5  ## Features
+    .
+   36  
+   37  ```
+   38: $ git clone  https://github.com/vijaypatidar99/vijaybus 
+   39: $ cd Vijaybus
+   40  ```
+   41  
+   ..
+   84  Contributing If you find a bug or have a feature request, please open an issue.
+   85  
+   86: If you would like to contribute to VijayBus, please fork the repository and submit a pull request.
+   87  
+   88: License VijayBus is released under the MIT License.
+   89  
+
+~/Desktop/vijaybus-A-bus-Booking-App/render.yaml:
+    1  databases:
+    2:   - name: vijaybus
+    3:     databaseName: vijaybus
+    4      user: vijaypatidar
+    5  
+    6  services:
+    7    - type: web
+    8:     name: vijaybus
+    9      env: ruby
+   10      buildCommand: "./render-build.sh"
+
+~/Desktop/vijaybus-A-bus-Booking-App/app/mailers/application_mailer.rb:
+    1  class ApplicationMailer < ActionMailer::Base
+    2:   default from: "nkbus@services"
+    3    layout "mailer"
+    4  end
+
+~/Desktop/vijaybus-A-bus-Booking-App/app/views/shared/_footer.html.erb:
+    9              <h5>About Us</h5>
+   10              <ul class="list-unstyled">
+   11:               <li><a href="#">NkBus on Mobile</a></li>
+   12                <li><a href="#">Sitemap</a></li>
+   13                <li><a href="#">Values</a></li>
+   ..
+   46          <hr>
+   47          <div class="row">
+   48:           <p>&copy; 2024 NkBus All rights reserved.</p>
+   49          </div>
+   50        </div>
+
+~/Desktop/vijaybus-A-bus-Booking-App/app/views/shared/_nav.html.erb:
+    1  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    2    <div class="container-fluid">
+    3:     <a class="navbar-brand" href="/">NkBus</a>
+    4      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    5        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+~/Desktop/vijaybus-A-bus-Booking-App/app/views/ticket_mailer/send_email.html.erb:
+   10            <%if @ticket.Confirmed? %>
+   11              <h4> We are pleased to inform you that your bus ticket reservation for <%=@ticket.route.from%> to  <%=@ticket.route.to%> on  <%=@ticket.date%> has been accepted by our team.<br>
+   12:               Thank you for choosing NkBus for your travel needs. We hope you have a safe and comfortable journey with us. <br>
+   13                Best regards,<br>
+   14                <b>Vijay Bus Service
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/application.rb:
+    6  Bundler.require(*Rails.groups)
+    7  
+    8: module Vijaybus
+    9    class Application < Rails::Application
+   10      # Initialize configuration defaults for originally generated Rails version.
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/cable.yml:
+    8    adapter: redis
+    9    url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+   10:   channel_prefix: vijaybus_production
+   11  
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/database.yml:
+   46    adapter: postgresql
+   47    encoding: unicode
+   48:   database: vijaybus_development
+   49    pool: 5
+   50    username: postgres
+   ..
+   76    adapter: postgresql
+   77    encoding: unicode
+   78:   database: vijaybus
+   79    pool: 5
+   80    username: postgres
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/environments/production.rb:
+   61    # Use a real queuing backend for Active Job (and separate queues per environment).
+   62    # config.active_job.queue_adapter     = :resque
+   63:   # config.active_job.queue_name_prefix = "vijaybus_production"
+   64  
+   65    config.action_mailer.perform_caching = false
+
+19 matches across 10 files
+
+
+Searching 177 files for "vijaybus"
+
+~/Desktop/vijaybus-A-bus-Booking-App/README.md:
+    1  
+    2: ## NkBus
+    3: NkBus is a web-based bus booking application built using Ruby on Rails framework. This application allows users to search for buses and book tickets for various routes. It also provides an admin dashboard to manage buses, routes, and ticket bookings.
+    4  
+    5  ## Features
+    .
+   36  
+   37  ```
+   38: $ git clone  https://github.com/vijaypatidar99/vijaybus 
+   39: $ cd Vijaybus
+   40  ```
+   41  
+   ..
+   84  Contributing If you find a bug or have a feature request, please open an issue.
+   85  
+   86: If you would like to contribute to VijayBus, please fork the repository and submit a pull request.
+   87  
+   88: License VijayBus is released under the MIT License.
+   89  
+
+~/Desktop/vijaybus-A-bus-Booking-App/render.yaml:
+    1  databases:
+    2:   - name: vijaybus
+    3:     databaseName: vijaybus
+    4      user: vijaypatidar
+    5  
+    6  services:
+    7    - type: web
+    8:     name: vijaybus
+    9      env: ruby
+   10      buildCommand: "./render-build.sh"
+
+~/Desktop/vijaybus-A-bus-Booking-App/app/mailers/application_mailer.rb:
+    1  class ApplicationMailer < ActionMailer::Base
+    2:   default from: "vijaybus@services"
+    3    layout "mailer"
+    4  end
+
+~/Desktop/vijaybus-A-bus-Booking-App/app/views/shared/_footer.html.erb:
+    9              <h5>About Us</h5>
+   10              <ul class="list-unstyled">
+   11:               <li><a href="#">VijayBus on Mobile</a></li>
+   12                <li><a href="#">Sitemap</a></li>
+   13                <li><a href="#">Values</a></li>
+   ..
+   46          <hr>
+   47          <div class="row">
+   48:           <p>&copy; 2023 VijayBus All rights reserved.</p>
+   49          </div>
+   50        </div>
+
+~/Desktop/vijaybus-A-bus-Booking-App/app/views/ticket_mailer/send_email.html.erb:
+   10            <%if @ticket.Confirmed? %>
+   11              <h4> We are pleased to inform you that your bus ticket reservation for <%=@ticket.route.from%> to  <%=@ticket.route.to%> on  <%=@ticket.date%> has been accepted by our team.<br>
+   12:               Thank you for choosing VijayBus for your travel needs. We hope you have a safe and comfortable journey with us. <br>
+   13                Best regards,<br>
+   14                <b>Vijay Bus Service
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/application.rb:
+    6  Bundler.require(*Rails.groups)
+    7  
+    8: module Vijaybus
+    9    class Application < Rails::Application
+   10      # Initialize configuration defaults for originally generated Rails version.
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/cable.yml:
+    8    adapter: redis
+    9    url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+   10:   channel_prefix: vijaybus_production
+   11  
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/database.yml:
+   46    adapter: postgresql
+   47    encoding: unicode
+   48:   database: vijaybus_development
+   49    pool: 5
+   50    username: postgres
+   ..
+   76    adapter: postgresql
+   77    encoding: unicode
+   78:   database: vijaybus
+   79    pool: 5
+   80    username: postgres
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/environments/production.rb:
+   61    # Use a real queuing backend for Active Job (and separate queues per environment).
+   62    # config.active_job.queue_adapter     = :resque
+   63:   # config.active_job.queue_name_prefix = "vijaybus_production"
+   64  
+   65    config.action_mailer.perform_caching = false
+
+18 matches across 9 files
+
+
+Searching 177 files for "vijaybus"
+
+~/Desktop/vijaybus-A-bus-Booking-App/README.md:
+    1  
+    2: ## VijayBus
+    3: VijayBus is a web-based bus booking application built using Ruby on Rails framework. This application allows users to search for buses and book tickets for various routes. It also provides an admin dashboard to manage buses, routes, and ticket bookings.
+    4  
+    5  ## Features
+    .
+   36  
+   37  ```
+   38: $ git clone  https://github.com/vijaypatidar99/vijaybus 
+   39: $ cd Vijaybus
+   40  ```
+   41  
+   ..
+   84  Contributing If you find a bug or have a feature request, please open an issue.
+   85  
+   86: If you would like to contribute to VijayBus, please fork the repository and submit a pull request.
+   87  
+   88: License VijayBus is released under the MIT License.
+   89  
+
+~/Desktop/vijaybus-A-bus-Booking-App/render.yaml:
+    1  databases:
+    2:   - name: vijaybus
+    3:     databaseName: vijaybus
+    4      user: vijaypatidar
+    5  
+    6  services:
+    7    - type: web
+    8:     name: vijaybus
+    9      env: ruby
+   10      buildCommand: "./render-build.sh"
+
+~/Desktop/vijaybus-A-bus-Booking-App/app/mailers/application_mailer.rb:
+    1  class ApplicationMailer < ActionMailer::Base
+    2:   default from: "nkbus@services"
+    3    layout "mailer"
+    4  end
+
+~/Desktop/vijaybus-A-bus-Booking-App/app/views/shared/_footer.html.erb:
+    9              <h5>About Us</h5>
+   10              <ul class="list-unstyled">
+   11:               <li><a href="#">NkBus on Mobile</a></li>
+   12                <li><a href="#">Sitemap</a></li>
+   13                <li><a href="#">Values</a></li>
+   ..
+   46          <hr>
+   47          <div class="row">
+   48:           <p>&copy; 2024 NkBus All rights reserved.</p>
+   49          </div>
+   50        </div>
+
+~/Desktop/vijaybus-A-bus-Booking-App/app/views/ticket_mailer/send_email.html.erb:
+   10            <%if @ticket.Confirmed? %>
+   11              <h4> We are pleased to inform you that your bus ticket reservation for <%=@ticket.route.from%> to  <%=@ticket.route.to%> on  <%=@ticket.date%> has been accepted by our team.<br>
+   12:               Thank you for choosing NkBus for your travel needs. We hope you have a safe and comfortable journey with us. <br>
+   13                Best regards,<br>
+   14                <b>Nk Bus Service
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/application.rb:
+    6  Bundler.require(*Rails.groups)
+    7  
+    8: module Vijaybus
+    9    class Application < Rails::Application
+   10      # Initialize configuration defaults for originally generated Rails version.
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/cable.yml:
+    8    adapter: redis
+    9    url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+   10:   channel_prefix: vijaybus_production
+   11  
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/database.yml:
+   46    adapter: postgresql
+   47    encoding: unicode
+   48:   database: vijaybus_development
+   49    pool: 5
+   50    username: postgres
+   ..
+   76    adapter: postgresql
+   77    encoding: unicode
+   78:   database: vijaybus
+   79    pool: 5
+   80    username: postgres
+
+~/Desktop/vijaybus-A-bus-Booking-App/config/environments/production.rb:
+   61    # Use a real queuing backend for Active Job (and separate queues per environment).
+   62    # config.active_job.queue_adapter     = :resque
+   63:   # config.active_job.queue_name_prefix = "vijaybus_production"
+   64  
+   65    config.action_mailer.perform_caching = false
+
+18 matches across 9 files

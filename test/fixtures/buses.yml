@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  starting_city: MyString
+  destination_city: MyString
+  departure_time: 2023-04-10 12:00:48
+
+two:
+  starting_city: MyString
+  destination_city: MyString
+  departure_time: 2023-04-10 12:00:48
